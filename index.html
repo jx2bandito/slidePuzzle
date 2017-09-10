@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Slide Puzzle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Slide Puzzle</title>
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+</head>
+
+<body ng-app="slideApp" ng-controller="slideCont">
+
+  <!--Audio files-->
+  <div ng-repeat="sound in soundFiles">
+    <audio id={{sound.ID}}>
+    <source src={{sound.URL}} type=audio/mp3>
+    Your browser does not support this audio.
+  </audio>
+
+  </div>
+
+
+  <div class=container>
+    <span id=volumeControl class="glyphicon glyphicon-volume-up"></span>
+    <div id=debug></div>
+    <div id=scoreBoard>Win: <span id=winScore>0</span> Lose: <span id=loseScore>0</span>
+    </div>
+    <br><br><br>
+    <div id=menu>
+      <span id=menuTitle>Choose Your Difficulty:</span><br>
+      <p id=beginner class=difficulty><span class=difName>Beginner </span><span id=dd1 class=difDesc> - 1 Hour</span></p>
+      <br>
+      <p id=intermediate class=difficulty><span class=difName>Intermediate</span> <span id=dd2 class=difDesc>- 5 Minutes</span></p>
+      <br>
+      <p id=hard class=difficulty><span class=difName>Hard</span> <span id=dd3 class=difDesc>- 1 Minute</span></p>
+    </div>
+    <div id=puzzleBox>
+      <div id=n1 class=slide>1</div>
+      <div id=n2 class=slide>2</div>
+      <div id=n3 class=slide>3</div>
+      <div id=n4 class=slide>4</div>
+      <div id=n5 class=slide>5</div>
+      <div id=n6 class=slide>6</div>
+      <div id=n7 class=slide>7</div>
+      <div id=n8 class=slide>8</div>
+      <div id=n9 class=slide>9</div>
+      <div id=n10 class=slide>10</div>
+      <div id=n11 class=slide>11</div>
+      <div id=n12 class=slide>12</div>
+      <div id=n13 class=slide>13</div>
+      <div id=n14 class=slide>14</div>
+      <div id=n15 class=slide>15</div>
+      <div id=empty class=slide></div>
+      <div id=internalMessage>YOU LOSE</div>
+
+    </div>
+    <div id=selection>
+      <div id=timer></div><button id=playAgain class=replayMenu>Play Again </button><button id=reset class=replayMenu> Reset</button></div>
+  </div>
+</body>
+
+</html>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
