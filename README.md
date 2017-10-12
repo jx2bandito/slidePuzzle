@@ -6,8 +6,6 @@ I just used ng-repeat to implement the audio files. This is by no means an Angul
 uses a brute force algorithm where random clicks are simulated repeatedly. I realize this is a bad approach resource wise, but it made sure the 
 game would be winnable as not all random combinations can be won if I just haphazardly placed all the pieces. A better approach would have been to store 
 multiple winnable starting positions in several objects. However, another project, Tacoholics Anonymous, was already brewing in my head...
-
-
 <br />
 <br />Project page: https://jx2bandito.github.io/slidePuzzle
 <br />
